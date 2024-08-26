@@ -29,7 +29,7 @@ I have used websocket because compared to the HTTP protocol, WebSocket eliminate
 The Swagger start up page will help in calling the Product List API.
 
 Hitting GET on the /api/productlist endpoint will return the list of products with ID and name, 10 hardcoded products.
-This is located in ProductListService. We can improve this app by adding a database with an ORM like EF Core.
+This is located in ProductListService.
 
 The second enpoint is the price list websocket /ws/productprices , which returns the price list array every second. The prices are generated randomly, a number between 1 and 100.
 
