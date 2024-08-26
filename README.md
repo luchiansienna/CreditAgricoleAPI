@@ -69,4 +69,5 @@ WebSocket can be mocked and passed into the constructor of WebSocketWrapper.
 * **CreditAgricole.Services.Tests** - 
 * **CreditAgricole.WebSocketService.Tests** -
 
-## CORS policy is activated for ports 3000 and 3001, multiple can be added if needed at CreditAgricole.Web\WebConfiguration.cs
+## CORS policy is activated
+CORS policy is activated for ports 3000 and 3001, multiple can be added if needed at CreditAgricole.Web\WebConfiguration.cs
