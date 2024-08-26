@@ -1,0 +1,6 @@
+@CreditAgricoleAPI_HostAddress = http://localhost:5151
+
+GET {{CreditAgricoleAPI_HostAddress}}/api/productlist
+Accept: application/json
+
+###

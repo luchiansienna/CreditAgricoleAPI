@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CreditAgricole.Domain\CreditAgricole.Domain.csproj" />
+    <ProjectReference Include="..\CreditAgricole.Services\CreditAgricole.Services.csproj" />
+    <ProjectReference Include="..\CreditAgricole.WebSocketService\CreditAgricole.WebSocketService.csproj" />
+    <ProjectReference Include="..\CreditAgricole.Services\CreditAgricole.Services.csproj" />
+  </ItemGroup>
+
+</Project>
