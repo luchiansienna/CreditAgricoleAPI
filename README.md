@@ -63,7 +63,7 @@ SOLID principles are applied, along with KISS and DRY.
 
 ## Unit tests
 
-All services are testable because they are implemented with no dependency concrete connections ( dependecy injection applied ).
+All services are testable because they are implemented with no concrete dependencies ( dependecy injection applied ).
 WebSocket can be mocked and passed into the constructor of WebSocketWrapper.
 
 * **CreditAgricole.Services.Tests** - 
