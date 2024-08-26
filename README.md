@@ -22,7 +22,7 @@ I have used websocket because compared to the HTTP protocol, WebSocket eliminate
 
 ## Steps to set the app on your local machine
 
-1. **Install .Net Framework Core & SQL Express database Server instance** on your machine
+1. **Install .Net Framework Core on your machine
 
 2. Run your app locally on IIS Express or any other .NET web server
 
