@@ -52,7 +52,7 @@ SOLID principles are applied, along with KISS and DRY.
 * The use of DTOs with Automapper
 * SQL Database with the product list and an the use of an ORM like EF Core
 * The use of SignalR wrapper over the WebSockets
-* Some caching in place where the data is not changed often, like the product list
+* A caching mechanism in place where the data is not changed often, like the product list
 * Unit tests and e2e tests
 * Authentication & Authorization
 
