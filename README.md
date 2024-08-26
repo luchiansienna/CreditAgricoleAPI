@@ -40,7 +40,8 @@ The second enpoint is the price list websocket /ws/productprices , which returns
 
 **CreditAgricole.Services** - contains 2 main services : ProductPrices and ProductList
 
-**CreditAgricole.WebSocketService** - an implementation of the websocket wrapper that sends the product prices every second
+**CreditAgricole.WebSocketService** - an implementation of the websocket wrapper that sends the product prices every second. 
+I am using the System.Net.WebSockets library to create the websocket connection, Dispose method and a cancellationToken to securily stop and clean the connection.
 
 **CreditAgricole.Web** - the web app that serve these 2 controllers: ProductListController and WebSocketController
 
