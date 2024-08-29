@@ -1,23 +1,22 @@
 
 # Credit Agricole Price listing app
 
-This is Web Api application that display list of products and price updates.
-
-This app is developed using C# .NET Core framework.
+This is a Web Api application that display a list of products and price updates and is developed using C# .NET Core framework.
 
 ## Main functionality
 
-The app displays a list of prices on the interface every second being updated with new prices.
+The app displays a list of prices on the interface being updated every second with new prices.
 
 There are 2 endpoints in place: 
 
 * **/api/productlist** : API endpoint that returns the list of the products without prices, just ID and name
 
 
-* **/ws/productprices** : For Price List every second updates I have used a WebSocket returning an array with ProductID, Price and UpdatedAt 
-( I have used UpdatedAt field for the showing a precise time, because the price is generated in the back end service so the price might be generated at different times than the others, at any time in the interval of one second )
-I have used websocket because compared to the HTTP protocol, WebSocket eliminates the need for a new connection with every request,
- reducing the size of each message (no HTTP headers).
+* **/ws/productprices** : For the Price List every second updates I have used a WebSocket returning an array with ProductID, Price and UpdatedAt 
+I have used UpdatedAt field part of the price list entity with the purpose of displaying a precise time to that specific price.
+The price is being generated in the back end service, it could be at different times (in the interval of one second) than the other prices.
+
+I have used a WebSocket because compared to the HTTP protocol, WebSocket eliminates the need for a new connection with every request, reducing the size of each message (no HTTP headers).
 
 
 ## Steps to set the app on your local machine
