@@ -30,7 +30,7 @@ namespace CreditAgricole.WebSocketService
             _logger?.LogInformation($"Launching ticker");
             while (await secondTimer.WaitForNextTickAsync(_cancellationToken.Token) && _socket.State == WebSocketState.Open)
             {
-                _logger?.LogDebug($"Web socket tick");
+                _logger?.LogInformation($"Web socket tick");
                  await BroadcastAsync(JsonConvert.SerializeObject(_productService.GetProducts(), serializerSettings));
             }
         }
@@ -73,7 +73,7 @@ namespace CreditAgricole.WebSocketService
         {
             if (result.MessageType == WebSocketMessageType.Close || _socket.State == WebSocketState.Aborted)
             {
-                _logger?.LogDebug($"Closing connection");
+                _logger?.LogInformation($"Closing connection");
                 await _socket.CloseAsync(result.CloseStatus.Value, result.CloseStatusDescription, _cancellationToken.Token);
                 _cancellationToken.Cancel();
             }

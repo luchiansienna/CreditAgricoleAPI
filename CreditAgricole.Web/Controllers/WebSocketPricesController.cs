@@ -20,7 +20,7 @@ namespace CreditAgricole.Controllers
         {
             if (HttpContext.WebSockets.IsWebSocketRequest)
             {
-                using var wsWrapper = new WebSocketWrapper(await HttpContext.WebSockets.AcceptWebSocketAsync(), _productService);
+                using var wsWrapper = new WebSocketWrapper(await HttpContext.WebSockets.AcceptWebSocketAsync(), _productService, _logger);
 
                 wsWrapper.LaunchSecondTickerAsync();
                 await wsWrapper.StartReceivingMessagesAsync();
